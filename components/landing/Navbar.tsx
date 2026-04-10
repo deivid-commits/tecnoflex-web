@@ -23,11 +23,11 @@ export default function Navbar() {
             <a href="#como-funciona" className="text-sm text-muted-light hover:text-foreground transition-colors">
               Cómo funciona
             </a>
+            <a href="#precios" className="text-sm text-muted-light hover:text-foreground transition-colors">
+              Precios
+            </a>
             <a href="#ahorro" className="text-sm text-muted-light hover:text-foreground transition-colors">
               Ahorro
-            </a>
-            <a href="#contacto" className="text-sm text-muted-light hover:text-foreground transition-colors">
-              Contacto
             </a>
           </div>
 
@@ -59,6 +59,7 @@ export default function Navbar() {
           <div className="flex flex-col gap-3">
             <a href="#servicios" onClick={() => setOpen(false)} className="text-muted-light hover:text-foreground py-2">Servicios</a>
             <a href="#como-funciona" onClick={() => setOpen(false)} className="text-muted-light hover:text-foreground py-2">Cómo funciona</a>
+            <a href="#precios" onClick={() => setOpen(false)} className="text-muted-light hover:text-foreground py-2">Precios</a>
             <a href="#ahorro" onClick={() => setOpen(false)} className="text-muted-light hover:text-foreground py-2">Ahorro</a>
             <a href="#contacto" onClick={() => setOpen(false)} className="text-muted-light hover:text-foreground py-2">Contacto</a>
             <hr className="border-border" />
