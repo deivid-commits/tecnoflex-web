@@ -85,7 +85,7 @@ begin
     new.id,
     coalesce(new.raw_user_meta_data->>'full_name', ''),
     new_locker_code,
-    new_locker_code || char(10) || '12345 NW 7th St' || char(10) || 'Portland, OR 97201' || char(10) || 'United States'
+    new_locker_code || chr(10) || '12345 NW 7th St' || chr(10) || 'Portland, OR 97201' || chr(10) || 'United States'
   );
   return new;
 end;
