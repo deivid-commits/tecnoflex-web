@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
@@ -10,8 +11,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link href="/" className="text-2xl font-bold gradient-text">
-              TECNOFLEX
+            <Link href="/" className="inline-block">
+              <Image src="/logo-tcnoflex.png" alt="TCNOflex" width={180} height={62} />
             </Link>
             <p className="text-muted-light text-sm mt-3 leading-relaxed">
               Tu casillero virtual en USA sin taxes. Comprá en Estados Unidos sin impuesto y recibí en Colombia.
@@ -34,7 +35,6 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Compañía</h3>
             <ul className="space-y-2">
               <li><a href="#como-funciona" className="text-muted-light hover:text-foreground text-sm transition-colors">Cómo funciona</a></li>
-              <li><a href="#ahorro" className="text-muted-light hover:text-foreground text-sm transition-colors">El ahorro</a></li>
               <li><a href="#" className="text-muted-light hover:text-foreground text-sm transition-colors">Términos de servicio</a></li>
               <li><a href="#" className="text-muted-light hover:text-foreground text-sm transition-colors">Política de privacidad</a></li>
             </ul>
@@ -62,7 +62,7 @@ export default function Footer() {
 
         <div className="border-t border-border mt-12 pt-8 text-center">
           <p className="text-muted text-sm">
-            &copy; {new Date().getFullYear()} TECNOFLEX. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} TCNOflex. Todos los derechos reservados.
           </p>
         </div>
       </div>

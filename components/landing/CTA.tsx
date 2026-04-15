@@ -20,17 +20,17 @@ export default function CTA() {
           <h2 className="text-3xl sm:text-5xl font-bold mb-6">
             Empezá a comprar en USA
             <br />
-            <span className="gradient-text">sin impuestos</span>
+            <span className="gradient-text">tiempo récord</span>
           </h2>
           <p className="text-lg text-muted-light mb-10 max-w-2xl mx-auto">
-            Creá tu casillero virtual en Oregon en menos de 2 minutos. Sin costo de registro.
+            Tu casillero virtual en Oregon listo para recibir tus compras. Sin costo de registro.
           </p>
 
           <Link
-            href="/register"
+            href="/login"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-10 py-4 rounded-xl transition-all hover:shadow-lg hover:shadow-primary/25 text-lg"
           >
-            Regístrate gratis <ArrowRight size={20} />
+            Ingresar a tu cuenta <ArrowRight size={20} />
           </Link>
         </motion.div>
       </div>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Mail, Lock, User, ArrowRight, Loader2, Shield,
   Package, Zap, CheckCircle, Globe, Star
@@ -71,7 +72,9 @@ export default function RegisterPage() {
              style={{ background: "radial-gradient(circle, #8b5cf6 0%, transparent 70%)" }} />
 
         <div className="relative z-10">
-          <Link href="/" className="text-2xl font-bold gradient-text">TECNOFLEX</Link>
+          <Link href="/" className="inline-block">
+            <Image src="/logo-tcnoflex.png" alt="TCNOflex" width={200} height={68} priority />
+          </Link>
           <p className="text-xs text-muted mt-1 tracking-widest uppercase">Tu casillero en USA</p>
         </div>
 
@@ -107,7 +110,7 @@ export default function RegisterPage() {
               <span className="text-primary font-semibold">
                 {fullName ? fullName.split(" ")[0].toUpperCase() : "TU NOMBRE"}
               </span>
-              {" "}— TFX-1234<br />
+              {" "}— TFX1234<br />
               12345 NW 7th St<br />
               Portland, OR 97201<br />
               <span className="text-muted">United States</span>
@@ -153,7 +156,9 @@ export default function RegisterPage() {
 
           {/* Mobile logo */}
           <div className="lg:hidden text-center mb-8">
-            <Link href="/" className="text-2xl font-bold gradient-text">TECNOFLEX</Link>
+            <Link href="/" className="inline-block">
+              <Image src="/logo-tcnoflex.png" alt="TCNOflex" width={180} height={62} priority />
+            </Link>
             <p className="text-muted text-sm mt-1">Crea tu casillero virtual en USA</p>
           </div>
 

@@ -4,7 +4,6 @@ import Services from "@/components/landing/Services";
 import HowItWorks from "@/components/landing/HowItWorks";
 import WhyUs from "@/components/landing/WhyUs";
 import Pricing from "@/components/landing/Pricing";
-import Savings from "@/components/landing/Savings";
 import CTA from "@/components/landing/CTA";
 import Footer from "@/components/landing/Footer";
 
@@ -17,7 +16,6 @@ export default function Home() {
       <HowItWorks />
       <WhyUs />
       <Pricing />
-      <Savings />
       <CTA />
       <Footer />
     </main>

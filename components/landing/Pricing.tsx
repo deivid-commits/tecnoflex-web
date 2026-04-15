@@ -7,7 +7,6 @@ import { Check, Package, Calculator, Info } from "lucide-react";
 
 const features = [
   "Casillero virtual en Oregon",
-  "0% Sales Tax en compras",
   "Consolidación gratis",
   "Tracking en tiempo real",
   "Fotos de tus paquetes",
@@ -135,10 +134,10 @@ export default function Pricing() {
           {/* CTA */}
           <div className="text-center mb-10">
             <Link
-              href="/register"
+              href="/login"
               className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-xl transition-all hover:shadow-lg hover:shadow-primary/25"
             >
-              Crear casillero gratis
+              Ingresar a tu casillero
             </Link>
             <p className="text-xs text-muted mt-3">
               Cambiá o cancelá en cualquier momento

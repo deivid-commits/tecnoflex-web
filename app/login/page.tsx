@@ -4,6 +4,7 @@ import { useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, Lock, ArrowRight, Loader2 } from "lucide-react";
 
 export default function LoginPage() {
@@ -54,8 +55,8 @@ export default function LoginPage() {
       <div className="w-full max-w-md">
         {/* Logo */}
         <div className="text-center mb-8">
-          <Link href="/" className="text-3xl font-bold gradient-text">
-            TECNOFLEX
+          <Link href="/" className="inline-block">
+            <Image src="/logo-tcnoflex.png" alt="TCNOflex" width={220} height={75} priority />
           </Link>
           <p className="text-muted-light mt-2">
             Ingresa a tu casillero virtual

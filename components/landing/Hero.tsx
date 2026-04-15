@@ -1,8 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, MapPin, Shield, Truck } from "lucide-react";
+import { MapPin, Shield, Truck, ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -21,7 +20,7 @@ export default function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-surface-light border border-border rounded-full px-4 py-2 mb-8">
             <MapPin size={16} className="text-primary" />
-            <span className="text-sm text-muted-light">Oregon, USA — 0% Sales Tax</span>
+            <span className="text-sm text-muted-light">Oregon, USA — Casillero disponible</span>
           </div>
 
           {/* Title */}
@@ -38,12 +37,6 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="/register"
-              className="bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-xl transition-all hover:shadow-lg hover:shadow-primary/25 flex items-center gap-2 text-lg"
-            >
-              Crear casillero gratis <ArrowRight size={20} />
-            </Link>
             <a
               href="#como-funciona"
               className="bg-surface-light hover:bg-border-light border border-border text-foreground font-medium px-8 py-4 rounded-xl transition-colors text-lg"

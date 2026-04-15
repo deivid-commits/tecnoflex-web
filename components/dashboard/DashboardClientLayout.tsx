@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import {
@@ -41,9 +42,9 @@ export default function DashboardClientLayout({
     <div className="min-h-screen bg-background flex">
       {/* Sidebar - Desktop */}
       <aside className="hidden lg:flex flex-col w-64 bg-surface border-r border-border">
-        <div className="p-6 border-b border-border">
-          <Link href="/" className="text-xl font-bold gradient-text">
-            TECNOFLEX
+        <div className="p-4 border-b border-border">
+          <Link href="/" className="inline-block">
+            <Image src="/logo-tcnoflex.png" alt="TCNOflex" width={160} height={55} priority />
           </Link>
         </div>
         <nav className="flex-1 p-4 space-y-1">
@@ -77,9 +78,9 @@ export default function DashboardClientLayout({
       {sidebarOpen && (
         <div className="lg:hidden fixed inset-0 z-50 bg-black/50" onClick={() => setSidebarOpen(false)}>
           <aside className="w-64 h-full bg-surface border-r border-border" onClick={(e) => e.stopPropagation()}>
-            <div className="p-6 border-b border-border flex items-center justify-between">
-              <Link href="/" className="text-xl font-bold gradient-text">
-                TECNOFLEX
+            <div className="p-4 border-b border-border flex items-center justify-between">
+              <Link href="/" className="inline-block">
+                <Image src="/logo-tcnoflex.png" alt="TCNOflex" width={140} height={48} />
               </Link>
               <button onClick={() => setSidebarOpen(false)}>
                 <X size={20} />
@@ -120,8 +121,8 @@ export default function DashboardClientLayout({
           <button onClick={() => setSidebarOpen(true)}>
             <Menu size={24} />
           </button>
-          <Link href="/" className="text-lg font-bold gradient-text">
-            TECNOFLEX
+          <Link href="/" className="inline-block">
+            <Image src="/logo-tcnoflex.png" alt="TCNOflex" width={110} height={38} />
           </Link>
           <div className="w-6" />
         </header>

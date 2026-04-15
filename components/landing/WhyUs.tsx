@@ -5,11 +5,6 @@ import { DollarSign, Package, HelpCircle, Home } from "lucide-react";
 
 const advantages = [
   {
-    icon: DollarSign,
-    title: "0% Sales Tax",
-    desc: "Oregon no cobra impuesto en compras. Ahorrás 8-10% en cada compra.",
-  },
-  {
     icon: Package,
     title: "Consolidación gratis",
     desc: "Varios paquetes = 1 solo envío. Ahorrás en costos de envío.",
