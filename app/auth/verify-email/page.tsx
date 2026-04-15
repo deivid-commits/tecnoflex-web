@@ -38,7 +38,7 @@ export default function VerifyEmailPage() {
         </div>
 
         <Link href="/" className="text-2xl font-bold gradient-text block mb-2">
-          TECNOFLEX
+          TCNOflex
         </Link>
 
         <h1 className="text-2xl font-bold mt-6 mb-3">
@@ -54,7 +54,7 @@ export default function VerifyEmailPage() {
         {/* Pasos */}
         <div className="bg-surface border border-border rounded-2xl p-6 mb-6 text-left space-y-4">
           {[
-            { n: "1", text: "Abre el email de TECNOFLEX" },
+            { n: "1", text: "Abre el email de TCNOflex" },
             { n: "2", text: 'Haz clic en "Confirmar cuenta"' },
             { n: "3", text: "Tu casillero en Oregon te espera 🎉" },
           ].map(({ n, text }) => (

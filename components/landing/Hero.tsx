@@ -27,12 +27,12 @@ export default function Hero() {
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-6">
             Tu casillero virtual
             <br />
-            <span className="gradient-text">en USA sin taxes</span>
+            <span className="gradient-text">en USA</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl text-muted-light max-w-2xl mx-auto mb-10">
-            Compra en Estados Unidos sin impuesto. Recibe en Colombia sin complicaciones.
+            Compra en Estados Unidos y recibe en Colombia sin complicaciones.
           </p>
 
           {/* CTAs */}

@@ -6,6 +6,29 @@ import { useRouter } from "next/navigation";
 import { Copy, Check, ArrowRight, Package, MapPin, Sparkles } from "lucide-react";
 import Link from "next/link";
 
+/**
+ * Renderiza el código del casillero en dos partes coloreadas.
+ * Formato esperado en DB: "O190266 TFX1004"
+ * - Parte antes del espacio → texto normal (código Coordinadora, negro/foreground)
+ * - Parte después del espacio → texto rojo (código interno TCNOflex)
+ * Si no hay espacio, muestra todo en rojo (código interno solo).
+ */
+function LockerCode({ code }: { code: string }) {
+  const idx = code.indexOf(" ");
+  if (idx === -1) {
+    return <span className="text-danger">{code}</span>;
+  }
+  const coordinadora = code.slice(0, idx);
+  const interno = code.slice(idx + 1);
+  return (
+    <>
+      <span className="text-foreground">{coordinadora}</span>
+      {" "}
+      <span className="text-danger">{interno}</span>
+    </>
+  );
+}
+
 export default function WelcomePage() {
   const [profile, setProfile] = useState<{ locker_code: string; locker_address: string; full_name: string } | null>(null);
   const [copied, setCopied] = useState<"code" | "address" | null>(null);
@@ -56,7 +79,7 @@ export default function WelcomePage() {
             <span className="gradient-text">{profile?.full_name?.split(" ")[0] || "amigo"}</span>!
           </h1>
           <p className="text-muted-light">
-            Ya puedes comprar en USA sin impuestos. Esta es tu dirección en Oregon:
+            Esta es tu dirección en Oregon para recibir tus paquetes:
           </p>
         </div>
 
@@ -66,7 +89,10 @@ export default function WelcomePage() {
             <Sparkles size={22} className="text-primary shrink-0" />
             <div>
               <p className="text-xs text-muted uppercase tracking-widest mb-0.5">Tu código de casillero</p>
-              <p className="text-2xl font-bold font-mono text-primary">{profile?.locker_code}</p>
+              {/* Formato: O190266 TFX1004 — código Coordinadora (negro) + código interno (rojo), sin guion */}
+              <p className="text-2xl font-bold font-mono">
+                <LockerCode code={profile?.locker_code ?? ""} />
+              </p>
             </div>
           </div>
           <button
@@ -102,7 +128,11 @@ export default function WelcomePage() {
           </div>
           <p className="text-xs text-muted mt-3">
             Usa esta dirección como destino de envío al comprar en Amazon, Nike, Apple y más.
-            Incluye siempre tu código <span className="text-primary font-mono">{profile?.locker_code}</span> en el nombre del destinatario.
+            Incluye siempre tu código interno{" "}
+            <span className="text-danger font-mono font-bold">
+              {profile?.locker_code?.split(" ")[1] ?? profile?.locker_code}
+            </span>{" "}
+            en el nombre del destinatario.
           </p>
         </div>
 

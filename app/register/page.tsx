@@ -14,9 +14,9 @@ const STORE_LOGOS = ["Amazon", "Nike", "Apple", "Best Buy", "Walmart", "Shein"];
 
 const PERKS = [
   { icon: Zap,      text: "Dirección Oregon en 2 minutos" },
-  { icon: Shield,   text: "0% Sales Tax garantizado" },
   { icon: Package,  text: "Consolidación de paquetes gratis" },
   { icon: Globe,    text: "Envío puerta a puerta en Colombia" },
+  { icon: Shield,   text: "Soporte por WhatsApp incluido" },
 ];
 
 export default function RegisterPage() {
@@ -83,11 +83,11 @@ export default function RegisterPage() {
           <div>
             <h2 className="text-3xl font-bold leading-tight text-foreground">
               Compra en USA.<br />
-              <span className="gradient-text">Sin impuestos.</span><br />
+              <span className="gradient-text">Sin complicaciones.</span><br />
               Recibe en tu puerta.
             </h2>
             <p className="text-muted-light mt-3 text-sm leading-relaxed">
-              Dirección real en Oregon — el estado con 0% Sales Tax.
+              Dirección real en Oregon. Recibe en Colombia fácil y rápido.
             </p>
           </div>
 
@@ -145,7 +145,7 @@ export default function RegisterPage() {
             <div className="flex gap-0.5 mb-0.5">
               {[...Array(5)].map((_,i) => <Star key={i} size={10} fill="currentColor" className="text-warning" />)}
             </div>
-            <p className="text-xs text-muted-light">+500 colombianos ya ahorraron con Tecnoflex</p>
+            <p className="text-xs text-muted-light">+500 colombianos ya confían en TCNOflex</p>
           </div>
         </div>
       </div>

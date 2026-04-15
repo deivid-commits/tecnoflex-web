@@ -4,7 +4,7 @@ import DashboardClientLayout from "@/components/dashboard/DashboardClientLayout"
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Dashboard — TECNOFLEX",
+  title: "Dashboard — TCNOflex",
 };
 
 export default function DashboardLayout({
