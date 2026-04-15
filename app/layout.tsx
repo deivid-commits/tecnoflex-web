@@ -8,10 +8,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "TECNOFLEX — Tu casillero virtual en USA sin taxes",
+  title: "TCNOflex — Tu casillero virtual en USA",
   description:
-    "Compra en Estados Unidos sin impuesto. Recibe en Colombia sin complicaciones. Dirección en Oregon con 0% Sales Tax.",
-  keywords: ["casillero virtual", "compras USA", "envío Colombia", "Oregon sin tax", "TECNOFLEX"],
+    "Compra en Estados Unidos y recibí en Colombia sin complicaciones. Tu casillero virtual en Oregon.",
+  keywords: ["casillero virtual", "compras USA", "envío Colombia", "TCNOflex", "casillero Oregon"],
 };
 
 export default function RootLayout({
