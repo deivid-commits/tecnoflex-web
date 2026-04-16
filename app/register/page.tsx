@@ -112,7 +112,7 @@ export default function RegisterPage() {
               </span>
               {" "}— TFX1234<br />
               12345 NW 7th St<br />
-              Portland, OR 97201<br />
+              Florida, USA<br />
               <span className="text-muted">United States</span>
             </div>
           </div>

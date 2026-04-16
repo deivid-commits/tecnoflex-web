@@ -15,7 +15,7 @@ export default function Footer() {
               <Image src="/logo-tcnoflex.png" alt="TCNOflex" width={180} height={62} />
             </Link>
             <p className="text-muted-light text-sm mt-3 leading-relaxed">
-              Tu casillero virtual en USA. Compra en Estados Unidos y recibí en Colombia fácil y rápido.
+              Tu casillero virtual en USA. Compra en Estados Unidos y recibes en Colombia fácil y rápido.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-muted-light text-sm">
                 <MapPin size={16} className="text-primary shrink-0" />
-                Portland, OR, USA
+                Florida, USA
               </li>
               <li className="flex items-center gap-2 text-muted-light text-sm">
                 <Mail size={16} className="text-primary shrink-0" />

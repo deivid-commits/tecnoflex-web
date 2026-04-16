@@ -23,7 +23,7 @@ export default function Savings() {
             El <span className="gradient-text">ahorro</span>
           </h2>
           <p className="text-muted-light max-w-2xl mx-auto">
-            Mira cuánto te ahorrás en cada compra usando tu casillero en Florida
+            Mira cuánto ahorras en cada compra usando tu casillero en Florida
           </p>
         </motion.div>
 
@@ -90,7 +90,7 @@ export default function Savings() {
           </div>
 
           <p className="text-center text-muted-light mt-8">
-            Ahorrá 8-10% en cada compra + costos de envío reducidos con consolidación
+            Ahorra 8-10% en cada compra + costos de envío reducidos con consolidación
           </p>
         </motion.div>
       </div>

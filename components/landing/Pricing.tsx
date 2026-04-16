@@ -126,7 +126,7 @@ export default function Pricing() {
             </div>
             {isYearly && (
               <p className="text-sm text-success">
-                Ahorrás ${savings} por envío
+                Ahorras ${savings} por envío
               </p>
             )}
           </div>

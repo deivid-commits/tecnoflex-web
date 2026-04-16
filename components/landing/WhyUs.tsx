@@ -7,7 +7,7 @@ const advantages = [
   {
     icon: Package,
     title: "Consolidación gratis",
-    desc: "Varios paquetes = 1 solo envío. Ahorrás en costos de envío.",
+    desc: "Varios paquetes = 1 solo envío. Ahorras en costos de envío.",
   },
   {
     icon: HelpCircle,

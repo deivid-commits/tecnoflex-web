@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "TCNOflex — Tu casillero virtual en USA",
   description:
-    "Compra en Estados Unidos y recibí en Colombia sin complicaciones. Tu casillero virtual en Florida.",
+    "Compra en Estados Unidos y recibes en Colombia sin complicaciones. Tu casillero virtual en Florida.",
   keywords: ["casillero virtual", "compras USA", "envío Colombia", "TCNOflex", "casillero Florida"],
 };
 
