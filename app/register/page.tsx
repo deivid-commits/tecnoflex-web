@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { createClient } from "@/lib/supabase/client";
@@ -13,7 +13,7 @@ import {
 const STORE_LOGOS = ["Amazon", "Nike", "Apple", "Best Buy", "Walmart", "Shein"];
 
 const PERKS = [
-  { icon: Zap,      text: "Dirección Oregon en 2 minutos" },
+  { icon: Zap,      text: "Dirección Florida en 2 minutos" },
   { icon: Package,  text: "Consolidación de paquetes gratis" },
   { icon: Globe,    text: "Envío puerta a puerta en Colombia" },
   { icon: Shield,   text: "Soporte por WhatsApp incluido" },
@@ -87,7 +87,7 @@ export default function RegisterPage() {
               Recibe en tu puerta.
             </h2>
             <p className="text-muted-light mt-3 text-sm leading-relaxed">
-              Dirección real en Oregon. Recibe en Colombia fácil y rápido.
+              Dirección real en Florida. Recibe en Colombia fácil y rápido.
             </p>
           </div>
 
@@ -105,7 +105,7 @@ export default function RegisterPage() {
 
           {/* Mock address preview */}
           <div className="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur">
-            <p className="text-xs text-muted uppercase tracking-widest mb-2">Tu dirección en Oregon</p>
+            <p className="text-xs text-muted uppercase tracking-widest mb-2">Tu dirección en Florida</p>
             <div className="font-mono text-sm text-foreground leading-relaxed">
               <span className="text-primary font-semibold">
                 {fullName ? fullName.split(" ")[0].toUpperCase() : "TU NOMBRE"}
@@ -165,7 +165,7 @@ export default function RegisterPage() {
           <div className="mb-8">
             <h1 className="text-2xl font-bold">Crear tu casillero</h1>
             <p className="text-muted-light text-sm mt-1">
-              Gratis · Dirección Oregon · Lista en minutos
+              Gratis · Dirección Florida · Lista en minutos
             </p>
           </div>
 
@@ -226,7 +226,7 @@ export default function RegisterPage() {
             {/* Checklist */}
             <div className="bg-surface border border-border rounded-xl p-4 space-y-2">
               {[
-                "Dirección Oregon asignada al instante",
+                "Dirección Florida asignada al instante",
                 "Panel para rastrear tus paquetes",
                 "Consolidación y envío a Colombia",
               ].map(item => (

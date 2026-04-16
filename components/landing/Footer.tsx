@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -15,7 +15,7 @@ export default function Footer() {
               <Image src="/logo-tcnoflex.png" alt="TCNOflex" width={180} height={62} />
             </Link>
             <p className="text-muted-light text-sm mt-3 leading-relaxed">
-              Tu casillero virtual en USA. Comprá en Estados Unidos y recibí en Colombia fácil y rápido.
+              Tu casillero virtual en USA. Compra en Estados Unidos y recibí en Colombia fácil y rápido.
             </p>
           </div>
 

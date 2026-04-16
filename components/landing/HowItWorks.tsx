@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { UserPlus, ShoppingCart, Package, Layers, Truck } from "lucide-react";
@@ -7,7 +7,7 @@ const steps = [
   {
     icon: UserPlus,
     title: "Regístrate gratis",
-    desc: "Te damos tu dirección en Oregon al instante",
+    desc: "Te damos tu dirección en Florida al instante",
     step: "01",
   },
   {

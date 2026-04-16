@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 
@@ -23,7 +23,7 @@ export default function Savings() {
             El <span className="gradient-text">ahorro</span>
           </h2>
           <p className="text-muted-light max-w-2xl mx-auto">
-            Mira cuánto te ahorrás en cada compra usando tu casillero en Oregon
+            Mira cuánto te ahorrás en cada compra usando tu casillero en Florida
           </p>
         </motion.div>
 
@@ -43,7 +43,7 @@ export default function Savings() {
                   <th className="text-left p-5 text-muted-light font-medium">Producto</th>
                   <th className="text-left p-5 text-muted-light font-medium">Precio base</th>
                   <th className="text-left p-5 text-danger font-medium">Florida (+10% tax)</th>
-                  <th className="text-left p-5 text-success font-medium">Oregon (sin tax)</th>
+                  <th className="text-left p-5 text-success font-medium">Florida (sin tax)</th>
                   <th className="text-left p-5 text-primary font-medium">Ahorro</th>
                 </tr>
               </thead>
@@ -76,7 +76,7 @@ export default function Savings() {
                     <span className="text-danger text-sm font-medium">{item.withTax}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-light text-sm">Oregon (sin tax)</span>
+                    <span className="text-muted-light text-sm">Florida (sin tax)</span>
                     <span className="text-success text-sm font-medium">{item.withoutTax}</span>
                   </div>
                   <hr className="border-border" />

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Check, Package, Calculator, Info } from "lucide-react";
 
 const features = [
-  "Casillero virtual en Oregon",
+  "Casillero virtual en Florida",
   "Consolidación gratis",
   "Tracking en tiempo real",
   "Fotos de tus paquetes",
@@ -48,7 +48,7 @@ export default function Pricing() {
             Precios <span className="gradient-text">simplificados</span>
           </h2>
           <p className="text-muted-light max-w-xl mx-auto">
-            Sin planes confusos. Pagás por el peso que enviés. Todo incluido.
+            Sin planes confusos. Pagas por el peso que Envíes. Todo incluido.
           </p>
         </motion.div>
 

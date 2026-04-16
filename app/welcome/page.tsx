@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
@@ -79,7 +79,7 @@ export default function WelcomePage() {
             <span className="gradient-text">{profile?.full_name?.split(" ")[0] || "amigo"}</span>!
           </h1>
           <p className="text-muted-light">
-            Esta es tu dirección en Oregon para recibir tus paquetes:
+            Esta es tu dirección en Florida para recibir tus paquetes:
           </p>
         </div>
 
@@ -140,7 +140,7 @@ export default function WelcomePage() {
         <div className="grid grid-cols-3 gap-3 mb-8">
           {[
             { emoji: "🛒", title: "Compra", desc: "En tus tiendas favoritas de USA" },
-            { emoji: "📦", title: "Recibimos", desc: "Llega a tu casillero en Oregon" },
+            { emoji: "📦", title: "Recibimos", desc: "Llega a tu casillero en Florida" },
             { emoji: "🚚", title: "Enviamos", desc: "Puerta a puerta en Colombia" },
           ].map(({ emoji, title, desc }) => (
             <div key={title} className="bg-surface border border-border rounded-xl p-3 text-center">

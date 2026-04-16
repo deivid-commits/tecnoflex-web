@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
@@ -91,7 +91,7 @@ export default function TrackingPage() {
         <div className="bg-surface border border-border rounded-2xl p-12 text-center">
           <Package size={40} className="text-muted mx-auto mb-4" />
           <p className="text-muted-light">
-            {search ? "No se encontraron paquetes" : "No tenés paquetes todavía"}
+            {search ? "No se encontraron paquetes" : "No Tienes paquetes todavía"}
           </p>
         </div>
       ) : (

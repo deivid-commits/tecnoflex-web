@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { DollarSign, Package, HelpCircle, Home } from "lucide-react";
@@ -17,7 +17,7 @@ const advantages = [
   {
     icon: Home,
     title: "Entrega a tu puerta",
-    desc: "No tenés que ir a aduanas. Recibís en la puerta de tu casa.",
+    desc: "No Tienes que ir a aduanas. Recibes en la puerta de tu casa.",
   },
 ];
 

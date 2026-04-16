@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
@@ -66,7 +66,7 @@ export default function HistorialPage() {
       {shipments.length === 0 ? (
         <div className="bg-surface border border-border rounded-2xl p-12 text-center">
           <History size={40} className="text-muted mx-auto mb-4" />
-          <p className="text-muted-light mb-2">No tenés envíos todavía</p>
+          <p className="text-muted-light mb-2">No Tienes envíos todavía</p>
           <p className="text-sm text-muted">
             Cuando consolidemos tus paquetes y los enviemos a Colombia, aparecerán aquí.
           </p>

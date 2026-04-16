@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { Mail, Package, ShoppingCart, Truck } from "lucide-react";
@@ -7,7 +7,7 @@ const services = [
   {
     icon: Mail,
     title: "Casillero Virtual",
-    desc: "Dirección en Oregon para tus compras USA. Sin impuesto estatal, sin complicaciones.",
+    desc: "Dirección en Florida para tus compras USA. Sin impuesto estatal, sin complicaciones.",
   },
   {
     icon: Package,

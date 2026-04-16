@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -18,12 +18,12 @@ export default function CTA() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl sm:text-5xl font-bold mb-6">
-            Empezá a comprar en USA
+            Empieza a comprar en USA
             <br />
             <span className="gradient-text">tiempo récord</span>
           </h2>
           <p className="text-lg text-muted-light mb-10 max-w-2xl mx-auto">
-            Tu casillero virtual en Oregon listo para recibir tus compras. Sin costo de registro.
+            Tu casillero virtual en Florida listo para recibir tus compras. Sin costo de registro.
           </p>
 
           <Link

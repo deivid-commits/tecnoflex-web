@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
@@ -94,7 +94,7 @@ export default function DashboardPage() {
           <div>
             <h2 className="text-lg font-semibold flex items-center gap-2">
               <Package size={20} className="text-primary" />
-              Tu dirección en Oregon
+              Tu dirección en Florida
             </h2>
             <span className="text-sm text-primary font-mono">
               Casillero: {profile?.locker_code}
@@ -163,9 +163,9 @@ export default function DashboardPage() {
         {packages.length === 0 ? (
           <div className="bg-surface border border-border rounded-2xl p-12 text-center">
             <Package size={40} className="text-muted mx-auto mb-4" />
-            <p className="text-muted-light mb-2">No tenés paquetes todavía</p>
+            <p className="text-muted-light mb-2">No Tienes paquetes todavía</p>
             <p className="text-sm text-muted">
-              Cuando compres en USA y envíes a tu dirección de Oregon, los paquetes aparecerán aquí.
+              Cuando compres en USA y envíes a tu dirección de Florida, los paquetes aparecerán aquí.
             </p>
           </div>
         ) : (

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { MapPin, Shield, Truck, ArrowRight } from "lucide-react";
@@ -20,7 +20,7 @@ export default function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-surface-light border border-border rounded-full px-4 py-2 mb-8">
             <MapPin size={16} className="text-primary" />
-            <span className="text-sm text-muted-light">Oregon, USA — Casillero disponible</span>
+            <span className="text-sm text-muted-light">Florida, USA — Casillero disponible</span>
           </div>
 
           {/* Title */}

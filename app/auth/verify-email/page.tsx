@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { createClient } from "@/lib/supabase/client";
@@ -56,7 +56,7 @@ export default function VerifyEmailPage() {
           {[
             { n: "1", text: "Abre el email de TCNOflex" },
             { n: "2", text: 'Haz clic en "Confirmar cuenta"' },
-            { n: "3", text: "Tu casillero en Oregon te espera 🎉" },
+            { n: "3", text: "Tu casillero en Florida te espera 🎉" },
           ].map(({ n, text }) => (
             <div key={n} className="flex items-center gap-4">
               <div className="w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-sm flex items-center justify-center shrink-0">
